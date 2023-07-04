@@ -11,28 +11,23 @@ sklearn == 0.20.3<br>
 matplotlib == 2.2.3<br>
 
 ---
-Relative activity predictor
----------------------------------
-This model is trained to predict the relative activity of mismatched sgRNA with its original matched sgRNA.
+Getting Started
+---------------
 
----
-seq2seq-attention
----------------------------------
-This model is trained to predict matched sgRNA or mismatched sgRNA with high activity for input DNA target. Relative activity of mismatched sgRNA are predicted with the relative activity predictor above.<br>
+Usage Examples
+--------------
 
----
-output classifier
----------------------------------
-These models are trained to classify which kind of DNA input would be predicted with matched sgRNA or mismatched sgRNA by seq2seq-attention model.<br>
+    python3 net_work_final.py
 
----
-Absolute activity predictor
----------------------------------
-this model is trained to predict the absolute off-target activity on genome.<br>
+Output
+--------------
+  ./final_model_logit.ROC_AUC.png/PR.png
+  ./final_model_RF.ROC_AUC.png/PR.png
+  ./final_model_SVM.ROC_AUC.png/PR.png
+  ./final_model_model.ROC_AUC.png/PR.png
+  ./T2D_final_model.h5
 
----
-Supplementary Tables.docx
----------------------------------
-The Supplementary Table 1,2,3 in article [Wei-Xin Hu, Yu Rong, Yan Guo, Feng Jiang, Wen Tian, Hao Chen, Shan-Shan Dong, Tie-Lin Yang, ExsgRNA: reduce off-target efficiency by on-target mismatched sgRNA, Briefings in Bioinformatics, 2022;, bbac183](https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbac183/6587171).<br>
+`-ROC_AUC.png/PR.png`                                         : ROC-AUC (Receiver Operating Characteristic, Area Under Curve) and PR-AUC (Precision Recall Curve, Area Under Curve) of the logistic regression(Logit), random forest(RF), support vector machine(SVM) and artificial neural network(final_model_model) model<br>
+`T2D_final_model.h5`: Trained model<br>
 
 ---
