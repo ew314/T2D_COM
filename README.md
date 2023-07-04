@@ -1,10 +1,10 @@
-# T2D_COM
+T2D_COM
 ================================
-System Requirements and Installation
+# System Requirements and Installation
 ---------------------------------
-Python == 2.7.16<br>
+Python == 3.9.1<br>
 numpy == 1.16.5<br>
-tensorflow == 1.7.0<br>
+tensorflow == 2.1.0<br>
 keras == 2.1.6<br>
 scipy == 1.2.1<br>
 sklearn == 0.20.3<br>
